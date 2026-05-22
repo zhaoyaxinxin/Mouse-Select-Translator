@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Mouse Select Translator",
+  "version": "0.1.0",
+  "description": "Translate selected text on Windows and Edge with DeepSeek and OCR fallback.",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "http://127.0.0.1:48331/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*",
+        "file:///*"
+      ],
+      "match_about_blank": true,
+      "match_origin_as_fallback": true,
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
+}

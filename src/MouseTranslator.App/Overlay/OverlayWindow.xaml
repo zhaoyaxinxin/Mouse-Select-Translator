@@ -1,0 +1,36 @@
+<Window x:Class="MouseTranslator.App.OverlayWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Topmost="True"
+        ShowInTaskbar="False"
+        ResizeMode="NoResize"
+        SizeToContent="WidthAndHeight"
+        ShowActivated="False">
+    <Border x:Name="RootBorder"
+            Padding="14"
+            CornerRadius="14"
+            Background="#D91D2430"
+            BorderBrush="#66FFFFFF"
+            BorderThickness="1"
+            MaxWidth="420">
+        <ScrollViewer x:Name="ContentScrollViewer"
+                      HorizontalScrollBarVisibility="Disabled"
+                      VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <TextBlock x:Name="OriginalTextBlock"
+                           Foreground="#CCFFFFFF"
+                           FontSize="12"
+                           Visibility="Collapsed"
+                           TextWrapping="Wrap" />
+                <TextBlock x:Name="TranslatedTextBlock"
+                           Foreground="White"
+                           FontSize="15"
+                           FontWeight="SemiBold"
+                           TextWrapping="Wrap" />
+            </StackPanel>
+        </ScrollViewer>
+    </Border>
+</Window>

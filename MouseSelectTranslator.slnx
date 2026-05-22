@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/MouseTranslator.App/MouseTranslator.App.csproj" />
+    <Project Path="src/MouseTranslator.Core/MouseTranslator.Core.csproj" />
+    <Project Path="src/MouseTranslator.Infrastructure/MouseTranslator.Infrastructure.csproj" />
+    <Project Path="src/MouseTranslator.Tests/MouseTranslator.Tests.csproj" />
+  </Folder>
+</Solution>
