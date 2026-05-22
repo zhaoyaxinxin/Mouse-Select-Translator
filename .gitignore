@@ -8,6 +8,8 @@ obj/
 artifacts/
 
 checkpoints/
+agent-rules-books/
+AGENTS.full.md
 
 *.user
 *.suo
