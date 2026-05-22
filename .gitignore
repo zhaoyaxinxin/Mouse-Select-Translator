@@ -10,6 +10,17 @@ artifacts/
 checkpoints/
 agent-rules-books/
 AGENTS.full.md
+MouseSelectTranslator_Codex_Project_Plan.md
+
+docs/codex-next-phase-options.md
+docs/codex-phase5-plan.md
+docs/development-plan.md
+docs/environment-probe.md
+docs/modular-rollout-options.md
+docs/ocr-decision.md
+docs/ocr-implementation-options.md
+docs/ocr-local-plan.md
+docs/rollout-decision.md
 
 *.user
 *.suo
